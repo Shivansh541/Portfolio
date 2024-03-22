@@ -1,0 +1,33 @@
+{
+    "title": "Projects links",
+    "elements":9,
+    "links":[
+        {
+            "name":"iNotebook",
+            "desc":"A note taking Website both Frontend and Backend that keeps your notes secure from other users. You can add, Delete, Edit Notes whenever you want and your notes are safe. You can get that notes when you login.",
+            "image":"Project/inotebook.png",
+            "link":"https://github.com/Shivansh541/iNotebook"
+        },
+        {
+            "name":"myNewsApp",
+            "desc":"Created a News App Using NewsApi that shows most trending news. This app was created using react.js.",
+            "image":"Project/newsapp.png",
+            "link":"https://github.com/Shivansh541/myNewsApp"
+        },
+        {
+            "name":"E-Commerce",
+            "desc":"Created a Shopping Website using Django. You can search products here, add them to cart and place order. This is Both Frontend and Backend Website.",
+            "image":"Project/Ecommerce.png",
+            "link":"https://github.com/Shivansh541/E-Commerce"
+        },
+
+
+        {
+            "name":"iEducate",
+            "desc":"Single WebPage for Education Service",
+            "image":"Project/ieducate.png",
+            "link":"https://shivansh541.github.io/ieducate/"
+        }
+        
+    ]
+}
