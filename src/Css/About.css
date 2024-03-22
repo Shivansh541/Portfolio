@@ -1,0 +1,32 @@
+.about h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    width: 13%;
+    margin: auto;
+    border-bottom: 2px solid black;
+}
+.about h3{
+    color: rgb(1, 1, 42);
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+.about p{
+    color: rgb(0, 69, 62);
+    font-size: 15px;
+}
+.cont{
+    margin: 20px auto;
+    width: 80%;
+}
+.about::before{
+    content: "";
+    position: absolute;
+    height: 120%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url('../../public/Project/about.jpg') rgb(0, 0, 0, 0.2) no-repeat center center/cover;
+    background-blend-mode: multiply;
+    z-index: -1;
+}

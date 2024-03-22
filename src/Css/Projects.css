@@ -1,0 +1,67 @@
+
+.projects a img{
+    width: 75%;
+    margin: auto;
+    display: block;
+}
+.projects::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('../../public/Skills Images/projects.jpg') rgb(0, 0, 0,0.4) no-repeat center center/cover;
+    background-blend-mode: multiply;
+    top: 0;
+    z-index: -1;
+}
+.projects .row{
+    position: absolute;
+    top: 100%;
+    z-index: -1;
+    padding-top: 70px;
+}
+.projects .row.active{
+    transition: top 1s;
+    top: 0;
+}
+.projects .row::before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    height: var(--before-height,100%);
+    position: absolute;
+    background: url('../../public/Skills Images/projects.jpg') rgb(0, 0, 0,0.6) no-repeat center center/cover;
+    background-blend-mode: multiply;
+    top: 0;
+    z-index: -1;
+}
+.projects h4{
+    font-size: 25px;
+    margin: auto;
+    width: 75%;
+}
+.projects a{
+
+    margin: auto;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.projects p{
+    font-size: 17px;
+    margin: auto;
+    width: 75%;
+}
+.projects .row{
+    display: grid;
+    grid-template-columns: 33% auto 33%;
+    transition: bottom 1s;
+}
+.projects h1{
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 2px solid white;
+    width: 15%;
+    margin: auto;
+}
+

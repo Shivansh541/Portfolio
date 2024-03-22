@@ -1,0 +1,74 @@
+.contact a img{
+    height: 50px;
+}
+.contact form,.contact{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98.5%;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    height: 180%;
+    width: 100%;
+    background: url('../../public/Skills Images/contact.jpg') rgba(0, 0, 0, 0.2) no-repeat center center/cover;
+    z-index: -1;
+    background-blend-mode: multiply;
+}
+.contact form{
+    width: 33%;
+}
+.contact input,.contact textarea{
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 5px;
+    background: none;
+    width: 100%;
+    margin: 5px;
+    color: black;
+    outline: none;
+    border: 2px solid black;
+}
+.contact input{
+    border: none;
+    border-bottom: 2px solid black;
+
+}
+.contact h1{
+    color: black;
+    font-size: 40px;
+    border-bottom: 2px solid black;
+}
+.contact .btn{
+    padding: 7px;
+    font-size: 17px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: red;
+}
+.contact form{
+    position: absolute;
+    transition: left 1s;
+    left: 150%;
+    top: 15%;
+}
+.contact .links{
+    top: 150%;
+    transition: top 1.5s;
+    position: absolute;
+}
+.contact.active form{
+    position: absolute;
+    left: 32%;
+}
+.contact.active .links{
+    position: absolute;
+    top: 70%;
+}

@@ -1,0 +1,130 @@
+:root{
+    --left:10%;
+    --clr: black;
+}
+
+*{
+    margin: 0;
+    color: white;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.navbar ul li{
+    list-style: none;
+    width: 102px;
+    text-align: center;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.navbar a{
+    color: var(--clr);
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+.navbar ul::before {
+    content: "";
+    height: 2px;
+    width: 80px;
+    position: absolute;
+    background-color: var(--clr);
+    bottom: -40%;
+    left: var(--left);
+    transition: left 1s, background-color 1s;
+    border-radius: 2px;
+    transform: translate(-50%,-50%);
+}
+.navbar{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar p,.navbar ul{
+    margin: 0px 150px;
+}
+.navbar p{
+    font-size: 29px;
+    color: rgb(87 15 117);
+}
+#lists li a:hover{
+    border-bottom: 2px solid var(--clr);
+    color: red !important;
+}
+.active{
+    color: red !important;
+}
+.box{
+    height: 94%;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -70%;
+    transition: left 1s ease;
+}
+.box.active{
+    left: 0;
+}
+
+.box div{
+    width: 60rem;
+}
+.box p:nth-child(1){
+    font-size: 20px;
+}
+.box p:first-child b{
+    color: rgb(154 157 255);
+}
+.box h1{
+    font-size:  40px;
+    color: #ae7be4;
+}
+.home{
+    height: 94%;
+}
+.home::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    background-color: rgb(1, 22, 48);
+}
+.box .desc{
+    font-size: 15px;
+    margin: 20px 0px;
+    color: rgb(194, 239, 239);
+}
+.box h1 span{
+    color: red;
+}
+.box .btn{
+    padding: 7px;
+    font-size: 17px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.box a img{
+    height: 50px;
+}
+.links{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.links a{
+    margin-right: 50px;
+}
+
+
+

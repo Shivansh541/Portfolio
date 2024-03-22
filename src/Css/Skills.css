@@ -1,0 +1,86 @@
+
+.skills h1{
+    font-size: 40px;
+    text-align: center;
+    width: 180px;
+    margin: auto;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+.skills{
+    height: 90%;
+    padding: 0px 200px;
+
+}
+.skills::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: .9;
+    z-index: -1;
+    background: url('../../public/Skills Images/background.jpg') rgba(0,0,0,.6) repeat-y center center/cover;
+    background-blend-mode: multiply;
+}
+
+
+.skills::-webkit-scrollbar{
+    display: none;
+}
+.skillsBox li img{
+    height: 40px;
+    margin: 5px;
+}
+.skills li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    width: 300px;
+    font-size: 20px;
+    margin: 0px 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0,0,0,5);
+}
+.skillsBox{
+    display: flex;
+    padding: 10px 0px;
+}
+.skills .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills .c1{
+    opacity: 0;
+    position: absolute;
+    left: -50%;
+    transition: 1s ease;
+}
+.skills .c2{
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    transition: 1s ease;
+}
+.skills .c3{
+    opacity: 0;
+    position: absolute;
+    right: -50%;
+    transition: 1s ease-in-out;
+}
+.skills .active1{
+    opacity: 1;
+    left: 15%;
+}
+.skills .active2{
+    top: 15%;
+    opacity: 1;
+}
+.skills .active3{
+    opacity: 1;
+    right: 10%;
+}
